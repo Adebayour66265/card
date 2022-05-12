@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+.container{
+    width: 100%;
+    height: 100vh; 
+    font-family: sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.challenge{
+    width: 100%;
+    height: 100vh;
+    perspective: 1000;
+} 
+.challenge h1{
+    font-size: 40px;
+    color: gray;
+    font-weight: 400;
+    text-align: center;
+}
+.wrapper{
+    width: 310px;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.font-card, .back-card{
+    width: 310px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    filter: drop-shadow(1px 1px 2px #585858);
+}
+.back-card{
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* =======================  BACKGROUND FOR FIRST CARD   ========================== */
+.first-image{
+    background: url(./photo-1634126853435-a7062233b9ef.jpeg);
+    width: 100%;
+    height: 140px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.first-image img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.font-card h1{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20%;
+}
+.font-card h3{
+    font-size: 15px;
+    font-weight: 500;
+    color:  gray;
+    margin-top: -3%;
+    text-align: center;
+}
+.font-card p{
+    font-size: 15px;
+    font-weight: 500;
+    color: gray;
+    padding: 0 10px;
+    text-align: center;
+}
+.last-child{
+    padding: 10px;
+    border-top: 1px solid #f1f1f1;
+    margin-top: 30%;
+}
+.last-child p{
+    margin-top: 0;
+}
+
+
+/* ==================   BACK STYLE ================= */
+
+.back-first .fist-p{
+    font-size: 15px;
+    font-weight: 500;
+    color: gray;
+    padding: 0 10px 5px 10px;
+    text-align: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.back-card .first-h1{
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin-top: 15%;
+}
+.back-card .back-p{
+    padding: 0 2rem;
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+}
+
+.back-card .section-h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+.section-h1{
+    display: flex;
+}
+.section-h1 .div-h1-1{
+    padding: 3%;
+}
+
+.section-h1 .div-h1-1 h1{
+    font-size: 17px;
+    
+}
+.section-h1 .div-h1-1 p{
+    font-size: 15px;
+}
+
+
+.last-child-back{
+    padding: 10px;
+    border-top: 1px solid #f1f1f1;
+    margin-top: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last-child-back a{
+    margin-top: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: dodgerblue;
+}
+.last-child-back p{
+    cursor: pointer;
+    align-self: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
+    font-size: 17px;
+}
+.last-child-back p i{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
